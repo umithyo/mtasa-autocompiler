@@ -15,4 +15,5 @@ inotifywait -q -r -m -e close_write,moved_to . --format "%w %f" |
         echo "[Compiling] $i"
       fi
     fi
+    cd /resources
   done
