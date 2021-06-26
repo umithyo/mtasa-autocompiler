@@ -11,7 +11,8 @@ RUN apt-get install inotify-tools -y
 RUN apt-get install zlib1g:i386 -y
 RUN apt-get install lib32stdc++6 -y
 
-COPY compile.sh /app/
-RUN chmod +x /app/compile.sh
+COPY compile.sh /app
+COPY luac_mta /app
+RUN chmod -R +x /app
 
 ENTRYPOINT [ "/app/compile.sh" ]
