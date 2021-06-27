@@ -4,4 +4,9 @@ Detects Lua files and converts them to compiled versions.
 
 # Usage
 
-Link your mta resources as a volume under /resources
+Link your mta resources as a volume under /resources. Example:
+
+```
+volumes:
+  - ./resources:/resources
+```
